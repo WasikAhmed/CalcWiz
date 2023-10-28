@@ -10,15 +10,36 @@
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/main_display"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="125dp"
         android:layout_gravity="center"
-        android:layout_margin="20px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="20px"
+        android:background="@color/calc_display_color"
+        android:padding="20px"
+        android:text="4"
+        android:textStyle="bold"
+        android:gravity="center|right"
+        android:textSize="50sp"
+        />
+
+    <TextView
+        android:id="@+id/result_display"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
         android:layout_marginBottom="20px"
         android:background="@color/calc_display_color"
         android:padding="20px"
-        android:text="" />
+        android:text="4"
+        android:textStyle="bold"
+        android:gravity="center|right"
+        android:textSize="30sp"
+        />
 
     <GridLayout
         android:layout_width="match_parent"
@@ -28,6 +49,7 @@
         android:rowCount="5">
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/clear_button"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
@@ -36,162 +58,11 @@
             android:elevation="4dp"
             android:background="@color/clear_button_color"
             android:text="C"
+            android:textStyle="bold"
+            android:textSize="25sp"
             />
         <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_margin="5dp"
-            android:background="@color/operator_button_color"
-            android:elevation="4dp"
-            android:text="+-"
-            />
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_margin="5dp"
-            android:background="@color/operator_button_color"
-            android:text="%"
-            />
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_margin="5dp"
-            android:background="@color/operator_button_color"
-            android:text="/"
-            />
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_margin="5dp"
-            android:background="@color/digit_button_color"
-            android:text="7"
-            />
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_margin="5dp"
-            android:background="@color/digit_button_color"
-            android:text="8"
-            />
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_margin="5dp"
-            android:background="@color/digit_button_color"
-            android:text="9"
-            />
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_margin="5dp"
-            android:background="@color/operator_button_color"
-            android:text="X"
-            />
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_margin="5dp"
-            android:background="@color/digit_button_color"
-            android:text="4"
-            />
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_margin="5dp"
-            android:background="@color/digit_button_color"
-            android:text="5"
-            />
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_margin="5dp"
-            android:background="@color/digit_button_color"
-            android:text="6"
-            />
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_margin="5dp"
-            android:background="@color/operator_button_color"
-            android:text="-"
-            />
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_margin="5dp"
-            android:background="@color/digit_button_color"
-            android:text="1"
-            />
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_margin="5dp"
-            android:background="@color/digit_button_color"
-            android:text="2"
-            />
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_margin="5dp"
-            android:background="@color/digit_button_color"
-            android:text="3"
-            />
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_margin="5dp"
-            android:background="@color/operator_button_color"
-            android:text="+"
-            />
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_margin="5dp"
-            android:background="@color/digit_button_color"
-            android:text="."
-            />
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_margin="5dp"
-            android:background="@color/digit_button_color"
-            android:text="0"
-            />
-        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/del_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
@@ -199,8 +70,217 @@
             android:layout_margin="5dp"
             android:background="@color/del_button_color"
             android:text="DEL"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/percent_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:background="@color/operator_button_color"
+            android:text="%"
+            android:textStyle="bold"
+            android:textSize="30sp"
             />
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/div_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:background="@color/operator_button_color"
+            android:text="/"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/digit_button7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:background="@color/digit_button_color"
+            android:text="7"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/digit_button8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:background="@color/digit_button_color"
+            android:text="8"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/digit_button9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:background="@color/digit_button_color"
+            android:text="9"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/mul_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:background="@color/operator_button_color"
+            android:text="x"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/digit_button4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:background="@color/digit_button_color"
+            android:text="4"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/digit_button5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:background="@color/digit_button_color"
+            android:text="5"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/digit_button6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:background="@color/digit_button_color"
+            android:text="6"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sub_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:background="@color/operator_button_color"
+            android:text="-"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/digit_button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:background="@color/digit_button_color"
+            android:text="1"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/digit_button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:background="@color/digit_button_color"
+            android:text="2"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/digit_button3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:background="@color/digit_button_color"
+            android:text="3"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:background="@color/operator_button_color"
+            android:text="+"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/digit_button_decimal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:background="@color/digit_button_color"
+            android:text="."
+            android:textStyle="bold"
+            android:textSize="35sp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/digit_button0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:background="@color/digit_button_color"
+            android:text="0"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/digit_button00"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:background="@color/digit_button_color"
+            android:text="00"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/equal_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
@@ -208,6 +288,8 @@
             android:layout_margin="5dp"
             android:background="@color/equal_button_color"
             android:text="="
+            android:textStyle="bold"
+            android:textSize="35sp"
             />
 
     </GridLayout>
