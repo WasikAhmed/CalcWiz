@@ -2,4 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="blue">#0000FF</color>
+    <color name="calc_background_color">#202124</color>
+    <color name="calc_display_color">#F1F1F1</color>
+    <color name="digit_button_color">#c4c9c9</color>
+    <color name="equal_button_color">#ea725f</color>
+    <color name="operator_button_color">#cbe6f7</color>
+    <color name="clear_button_color">#ff9800</color>
+    <color name="del_button_color">#feedc1</color>
 </resources>
